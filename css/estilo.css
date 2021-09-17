@@ -1,0 +1,570 @@
+
+
+/* . . . LAYOUT .......... ... ...............*/
+
+/*STYLE BODY = DEFINE AS IMAGENS E CORES DE FUNDO, TAMBEM DEIXA ELAS FIXAS...............*/
+
+body {
+	background: url(../img/capa.png),
+	            url(../img/ruido.png),
+	            linear-gradient(50deg, #CD5C5C, #9400D3);
+	          /*linear-gradient(50deg, #ff4169, #7c26f8);*/
+  background-attachment: fixed;
+  font-family: Helvetica,Arial,sans-serif;
+}
+
+
+
+html, body, #home {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+
+html, body, footer {
+  overflow-x: hidden;
+}
+
+
+/*ESTILIZANDO A BARRA DE ROLAGEM*/
+::-webkit-scrollbar { 
+  width: 15px;
+  background: rgba(0, 0, 0, 0.2);  
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/*ESTILIZANDO A BARRA DE ROLAGEM*/
+
+
+ 
+/*STYLE HEADER E NAV ....................................................*/
+
+.menu-nav-style {  /*MODIFICAÇÕES NO HEADER*/
+	padding: 12px 0px;
+	font-size: 17px;
+}
+
+
+.divisor-nav { /*DIVISOR NO MENU*/
+	background: #c4c4c4;
+	width: 1.7px;
+	margin: 11px 12px;
+}
+
+
+.navbar-light .navbar-nav .nav-link { /*DEIXA OS LINKS DO MENU BRANCOS*/
+    color: white;                             
+}
+
+.navbar-light .navbar-nav .nav-link:hover { /* É O HOVER DOS LINKS MENU*/
+    color: #FFB6C1;
+}
+
+
+.navbar-transparente { /*DEIXA O HEADER TRASPARENTE, MAS COM UM TOM ESCURO*/
+    background: rgba(0,0,0,0.6);
+}
+
+
+.navbar-light .navbar-toggler { /*STYLE DO ICONE = MD*/
+    color: rgba(0,0,0,.5);
+    border-color: rgba(250, 250, 250,.6);
+}
+
+
+
+
+/*CAPA .....................................................................*/
+
+.capa { 
+	text-align: center;
+}
+
+
+.capa h1 {  /*SÃO OS TITULOS NO CAROUSEL = COM TAMANHOS DIFERENTES DEPENDENDO DO WIDTH*/
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  margin-bottom: 50px;
+}
+
+
+      /*.................*/
+
+
+/*BOTÕES DO CAROUSEL.........*/
+
+.btn-custom {  /* ..MODIFICAÇÃO PADRÃO CUSTOMIZADA DOS BOTÕES.. */
+	
+      border-radius: 500px;
+      -moz-border-radius: 500px;
+      -webkit-border-radius: 500px;
+      text-transform: uppercase;
+      transition: background 0.6s, color 0.4s;
+      padding: 15px 17px; 
+      margin: 0px 12px;
+}
+
+
+.btn-azul { /* ..BOTÃO COM TONALIDADE AZUL "sou daltonico, parece azul pra mim :)".. */
+    background: #8000FF;
+    color: #A9E2F3;
+    padding: 17px;
+}
+
+.btn-azul:hover { /* ..HOVER DO BOTÃO AZUL.. */
+    background: #3104B4;
+    color: #A9BCF5;
+    text-decoration: none;
+}
+
+
+.btn-trasparente { /* ..BOTÃO TRASPARENTE.. */
+	background: transparent;
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+.btn-trasparente:hover { /* ..HOVER DO BOTÃO TRASPARENTE.. */
+	text-decoration: none;
+	background: #fff;
+	color: #1C1C1C;
+	border: 2px solid #fff;
+}
+
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 1%;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+    font-size: 50px;
+}
+
+
+/*..............................*/
+
+
+
+.conteudo-branco {
+	background: #fff;
+	padding: 30px 0px 30px 0px;
+
+}
+
+ h2 { /* ...TITULO DOS CONTEUDOS... */
+   font-weight: 700;
+   font-size: 45.5px;
+   letter-spacing: -0.5px;
+   color: #8000FF;
+}
+ 
+ h3 { /* ...TITULO DOS CONTEUDOS... */
+	font-weight: 700;
+	font-size: 30px;
+	color: #8000FF;
+	padding-top: 15px;
+}
+
+ p { /* ...PARAGRAFO DOS CONTEUDOS... */
+	font-size: 16.5px;
+	color: #120A2A;
+}
+
+
+.conteudo-branco h2, .conteudo-branco h3 { /* ...TITULO NO H2 DO CONTEUDO COM O BG BRANCO... */
+   
+   color: #8000FF;
+}
+
+
+ .conteudo-branco p { /* ...PARAGRAFO DO CONTEUDO COM O BG BRANCO... */
+	font-size: 16.5px;
+	color: #120A2A;
+}
+
+
+
+.conteudo-transpa h2, .conteudo-transpa h3 { /* ...H2 E H3 DO CONTEUDO COM O BG TRANSPARENTE... */
+	color: #fff;
+}
+
+
+.conteudo-transpa p { /* ...PARAGRAFO DO CONTEUDO COM O BG TRANSPARENTE... */
+	font-size: 16.5px;
+	color: #FFFF;
+}
+
+
+/* .....GIRA AS IMAGENS DO CONTEUDO TRASNPA ............*/
+.rotate { 
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+  padding-left: 80px;
+}
+/* .. FIM ROTATE DAS IMAGENS DO CONTEUDO TRASNPA ......*/
+
+
+
+/*COMEÇO DO FOOTER*/
+ footer {
+  padding: 50px 0px 20px 0px;
+  margin-top: 20px;
+  background: rgb( 0, 0, 0);
+  position: relative;
+ }
+
+ footer h4 {
+  color: #919496;
+  font-size: 0.8em;
+  text-transform: uppercase;
+ }
+
+ footer ul li a {
+  color: #fff;
+  font-size: 13px;
+  margin-left: 5px;
+ }
+
+ footer ul li a:hover {
+  color: #FFB6C1;
+  text-decoration: none;
+ }
+
+.logos-footer{
+  border: 0px solid red;
+  margin-left: 190px;
+}
+
+
+.logos-footer a{
+  color: #fff;
+  font-size: 35px;
+  text-decoration: none;
+  margin: 12px;
+
+}
+
+.logos-footer a:hover{
+  color: #FFB6C1;
+}
+/*FIM DO FOOTER*/
+
+
+/*// Extra small devices (portrait phones, less than 576px) ..........................*/
+@media (max-width: 575.98px) { 
+     
+/*HEADER ..........*/
+.navbar-transparente { /*DEIXA O HEADER TRASPARENTE, MAS COM UM TOM ESCURO*/
+    background: rgba(0,0,0,0.8);
+}
+/* FIM HEADER ..........*/
+
+   
+/*ESTILIZANDO A BARRA DE ROLAGEM*/
+ 
+  html, body, #home {
+   height: 100%;
+   overflow-x: visible;
+  }
+/*ESTILIZANDO A BARRA DE ROLAGEM*/
+
+
+
+
+ /*CAPA .....................*/    
+    .capa h1{
+        font-size: 40px;
+        margin-left: 4px;
+    }   
+  
+    
+ /*BOTÕES DO CAROUSEL ...........*/
+    .btn-custom { /* ..MODIFICAÇÃO PADRÃO CUSTOMIZADA DOS BOTÕES.. */
+        padding: 15px 19px; 
+        margin-top: 9px;
+        font-size: 14px;
+        font-weight: 600;
+    } 
+
+
+    /* ..BOTÃO COM TONALIDADE AZUL "sou daltonico, parece azul pra mim :)".. */
+    .btn-azul {
+       padding: 17px 11px; 
+       font-size: 14px;
+     
+    }
+            /*Obs = " Sei que não preciso, mas fica melhor de se entender "  */
+
+    .btn-trasparente { /* ..BOTÃO TRASPARENTE.. */
+       font-size: 14px;
+     
+    }
+ /* ...FIM CAPA ............ */
+
+
+
+/* ...CONTEUDOS ............ */
+
+    /* ...TTITULO DOS CONTEUDOS... */
+      h2{ 
+     font-weight: 700;
+     font-size: 34px;
+     letter-spacing: -0.5px;
+     padding-top: 1.3em;
+    }
+
+    /* ...H2 DO CONTEUDO COM O BG TRANSPARENTE... */*/
+     .conteudo-transpa h2{ 
+     font-weight: 700;
+     font-size: 34px;
+     letter-spacing: -0.5px;
+     padding-top: 0.5em;
+    }
+
+   
+   /* ...TITULO H3 DOS CONTEUDOS... */
+     h3{ 
+	   font-weight: 700;
+	   font-size: 24px;
+     padding-top: 15px;
+    }
+   
+    /* ...PARAGRAFO DOS CONTEUDOS... */
+    p{ 
+	   font-size: 16px;
+    }
+
+/* ...FIM CONTEUDOS ............. */
+
+
+
+/*COMEÇO DO FOOTER*/
+ footer {
+  padding: 20px 0px 30px 0px;
+  margin-top: 20px;
+  background: rgb( 0, 0, 0);
+  position: relative;
+ }
+
+ footer h4 {
+   margin-top: 25px;
+ }
+
+
+ .logos-footer{
+  border: 0px solid red;
+  margin-left: 15px;
+}
+
+/*FIM DO FOOTER*/
+
+
+}
+
+
+
+/*// Small devices (landscape phones, 576px and up) ....................................*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+ 
+  /*CAPA ......................*/      
+       .capa h1{
+        font-size: 50px;
+        text-indent: -10px;
+   }
+       /* ..MODIFICAÇÃO PADRÃO CUSTOMIZADA DOS BOTÕES.. */
+       .btn-custom {  
+        padding: 15px 20px; 
+        margin-top: 12px;
+        font-size: 15px;
+    } 
+
+  /*..FIM CAPA..................*/
+
+
+  /*COMEÇO CONTEUDO ............*/
+  
+    .conteudo-transpa h2{ 
+     padding-top: 0.3em;
+    }
+
+    .branco-cont h2{ 
+      padding-top: 0.80em;
+    }
+  /*FIM CONTEUDO ..............*/
+
+
+
+/*COMEÇO DO FOOTER ................*/
+ footer {
+  padding: 50px 0px 20px 0px;
+  margin-top: 20px;
+  background: rgb( 0, 0, 0);
+  position: relative;
+ }
+
+ footer h4 {
+   margin-top: 25px;
+ }
+/*FIM DO FOOTER .................*/
+}
+
+
+
+/*// Medium devices (tablets, 768px and up) .........................................*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+ 
+  /*CAPA .... ....................*/            
+        .capa h1{  
+        font-size: 64px;
+   }
+
+ /* ..MODIFICAÇÃO PADRÃO CUSTOMIZADA DOS BOTÕES.. */
+   .btn-custom {  
+        padding: 17px 25px; 
+        margin-top: 12px;
+        font-size: 17px;
+    } 
+
+  /* ..FIM CAPA .................... */
+
+
+
+ /* ...CONTEUDOS ................... */
+
+    /* ...TITULO H2 DOS CONTEUDOS... */ 
+     h2{ 
+     font-weight: 700;
+     font-size: 27.5px;
+     letter-spacing: -0.5px;
+     padding-top: 0px;
+    }
+
+   /* ...TITULO H3 DOS CONTEUDOS... */ 
+    h3{ 
+     font-weight: 700;
+	   font-size: 20px;
+	   padding-top: 0px;
+    }
+   
+    /* ...PARAGRAFO DOS CONTEUDOS... */
+    p{ 
+	   font-size: 14px;
+    }
+
+/* ...FIM CONTEUDOS ................ */
+
+
+
+  
+/*COMEÇO DO FOOTER ...............*/
+ footer {
+  padding: 50px 0px 20px 0px;
+  margin-top: 20px;
+  background: rgb( 0, 0, 0);
+  position: relative;
+ }
+
+ footer h4 {
+   margin-top: 25px;
+ }
+
+
+
+ .logos-footer{
+  border: 0px solid red;
+  margin-left: 120px;
+}
+
+/*FIM DO FOOTER ................*/
+
+}
+
+
+
+/*// Large devices (desktops, 992px and up) ......................................*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+  /*CAPA ..........................*/    
+       .capa h1{  
+        font-size: 80px;
+      }
+  /* ..FIM CAPA.. */
+
+
+
+ /*COMEÇO DO FOOTER ...............*/
+   footer h4 {
+     padding-top: 20px;
+   }
+/*FIM DO FOOTER ................*/
+}
+
+
+
+/*// Extra large devices (large desktops, 1200px and up)// ......................*/
+@media (min-width: 1200px) { 
+
+  /*CAPA ...............*/  
+
+        .capa h1 {  
+        font-size: 96px;
+       }     
+
+
+       .btn-custom { /*BOTÕES DO CAROUSEL*/
+        padding: 15px 17px; 
+        margin-left: 9px;
+        font-size: 19px;
+      } 
+
+
+      /* ..BOTÃO COM TONALIDADE AZUL "sou daltonico, parece azul pra mim :)".. */
+      .btn-azul { 
+       padding: 17px;
+       font-weight: 500;
+       letter-spacing: 0.5px;
+      }
+
+      .btn-trasparente { /* ..BOTÃO TRASPARENTE.. */
+       font-weight: 600;
+       letter-spacing: 0.5px;
+    }
+  /*FIM CAPA ..........*/
+
+  /*COMEÇO DO FOOTER ...............*/
+   footer h4 {
+     padding-top: 20px;
+   }
+/*FIM DO FOOTER ................*/
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
